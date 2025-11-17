@@ -1,19 +1,21 @@
 import React from "react";
-import { Card, Col } from "react-bootstrap";
+import { Card, Col, Button } from "react-bootstrap";
 
-export default function WelcomeCard() {
+export default function ProjectCard({ title, github }) {
   return (
-    <Col md={12} className="mb-4">
-      <Card className="text-center">
-        <Card.Body>
-          <Card.Title>Welcome to My Portfolio</Card.Title>
-          <Card.Text>
-            Hello! This is my final project portfolio for CC106 (AppDev) & ISE101 (Mobile Programming).
-            Here you can see my web app, mobile app, and other projects.
-          </Card.Text>
+    <Col md={4} className="mb-3">
+      <Card className="shadow-sm h-100">
+        <Card.Body className="d-flex flex-column">
+          <Card.Title>{title}</Card.Title>
+          <Button
+            variant="primary"
+            className="mt-auto"
+            onClick={() => window.open(github, "_blank")}
+          >
+            View Project
+          </Button>
         </Card.Body>
       </Card>
     </Col>
   );
 }
-
