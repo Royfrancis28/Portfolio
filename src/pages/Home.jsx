@@ -9,7 +9,7 @@ export default function Home() {
      <ProjectCard
   title="Student Management System"
   description="Fullstack: Django REST API, ReactJS frontend, React Native mobile app"
-  github="https://github.com/Royfrancis28/final-project-CC106-ISE101"
+  github="https://student-information-system-five.vercel.app/"
   live="https://your-frontend.vercel.app"
   mobile="https://expo.dev/@YOUR_USERNAME/student-management"
 />
